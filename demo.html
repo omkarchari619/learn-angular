@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="">
+    <head>
+        <title>Anglarjs</title>
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        
+    </head>
+    <script src="angular.min.js"></script>
+<style>
+    .blue{
+        background: blue;
+        padding: 10px;
+        border: 10px solid red;
+    }
+
+    .green{
+        background: green;
+        padding: 10px;
+        border: 10px solid blue;
+    }
+    </style>
+        <body>
+            <div>
+                <input type="text" placeholder="name" ng-model="color">
+                <div ng-class="color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate assumenda qui cumque distinctio aut sint molestiae at, ea nobis provident incidunt magni unde dolorem maiores corporis veritatis iure aliquam reprehenderit.</div> 
+                    <input type="checkbox" name="" ng-model="hide_or_show"/>show
+                    <div ng-hide="hide_or_show">Lorem</div>
+                <div ng-init="people =['','arushashin','manu']"></div>
+
+                <ul>
+                    <li ng-repeat="c in people">
+                        {{c}}
+                    </li>
+                </ul>
+                    
+            </div>
+            <!-- <p id="test">this is html</p>
+            <div class="test1">whatever</div> -->
+
+                <!-- <form action="#" method="GET">
+                <label for="url">URL</label>
+                <input type="text" name="" id="url"/><hr/>
+                <label for="domain">Domain Part</label>
+                <input type=
+                
+                
+                
+        "text" name="" id="domain"/><hr/>
+                <input type="submit" value="submit" onclick="doFirst()"/>
+               </form> -->
+ 
+
+            <!-- <form action="#" method="get">
+            <label for="url">URL</label>
+            <input type="text" name="" id="url"/><hr/>
+            <label for="domain">Domain Part</label>
+            <input type="text" name="" id="domain"/><hr/>
+            <input type="submit" value="submit" onclick="domain()"/>
+           </form>   -->
+          
+         
+         
+         <!-- <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> -->
+        </body>
+</html>
